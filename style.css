@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+html {
+    box-sizing: border-box; /* prevents padding from stretching div out */
+  }
