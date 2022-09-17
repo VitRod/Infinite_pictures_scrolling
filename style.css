@@ -10,3 +10,12 @@ html {
     background-color: #888;
     font-family: 'Caveat', cursive, sans-serif;
   }
+
+  h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
