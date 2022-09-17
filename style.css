@@ -3,3 +3,10 @@
 html {
     box-sizing: border-box; /* prevents padding from stretching div out */
   }
+
+  body {
+    margin:0px;
+    min-height: 100vh; /* VH = viewport height, stretches full hieght of screen */
+    background-color: #888;
+    font-family: 'Caveat', cursive, sans-serif;
+  }
