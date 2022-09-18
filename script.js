@@ -61,3 +61,14 @@ function displayPhotos() {
     imgCntnr.appendChild(item);
   });
 }
+
+// GET PHOTOS FROM UNSPLASH API
+async function getPhotos() {
+    try {
+      const response = await fetch(apiUrl);
+      photosArray = await response.json();
+      displayPhotos();
+    } catch (error) {
+      console.log(error);
+    }
+  }
