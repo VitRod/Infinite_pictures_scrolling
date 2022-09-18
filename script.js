@@ -72,3 +72,12 @@ async function getPhotos() {
       console.log(error);
     }
   }
+
+  // CHECK IF SCROLL HAS TOUCH BOTTOM OF WONDOW
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready) {
+      ready = false;
+      getPhotos();
+      console.log('load more');
+    }
+  });
