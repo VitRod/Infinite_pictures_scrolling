@@ -20,3 +20,10 @@ function imageLoaded() {
       apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
     }
   }
+
+  // CREATE ELEMENTS AND SET ATTRIBUTES
+function setAttributes(element, attributes) {
+    for (const key in attributes) {
+      element.setAttribute(key, attributes[key]);
+    }
+  }
