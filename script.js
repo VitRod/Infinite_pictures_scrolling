@@ -27,3 +27,18 @@ function setAttributes(element, attributes) {
       element.setAttribute(key, attributes[key]);
     }
   }
+
+  // CREATE ELEMENTS, LINKS, PHOTOS FOR DOM
+function displayPhotos() {
+    imagesLoaded = 0;
+    totalImages = photosArray.length;
+    console.log('total images= ', totalImages);
+  
+    // FOR EACH PHOTO ARRAY
+    photosArray.forEach((photo) => {
+      // CREATE ANCHOR LINK UNSPLASH
+      const item = document.createElement('a');
+      setAttributes(item, {
+        href: photo.links.html,
+        target: '_blank',
+      });
