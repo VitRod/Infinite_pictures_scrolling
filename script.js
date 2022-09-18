@@ -1,0 +1,1 @@
+const imgCntnr = document.getElementById('image-container');
