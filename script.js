@@ -42,3 +42,22 @@ function displayPhotos() {
         href: photo.links.html,
         target: '_blank',
       });
+
+      // CREATE <IMG> TAG
+    const img = document.createElement('img');
+    
+    // DRY REPEAT
+    setAttributes(img, {
+      src: photo.urls.regular,
+      alt: photo.alt_description,
+      title: photo.alt_description
+    });
+
+    // LISTEN, FOR WHEN OBJECT IS FINISHED LAODING
+    img.addEventListener('load', imageLoaded);
+
+    // PUT IMAGE IN <A> THEN BOTH IN IMAGE CONTAINER
+    item.appendChild(img);
+    imgCntnr.appendChild(item);
+  });
+}
